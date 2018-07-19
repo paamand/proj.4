@@ -12,8 +12,7 @@ ccache -M 1G
 ccache -s
 
 ./autogen.sh
-#sed -i -e 's/std::to_string/to_string/g' ./ogr/ogrsf_frmts/cad/libopencad/dwg/r2000.cpp #Needed due to missing std::to_string support in x86 android (replaces)
-CC="ccache i686-linux-android-clang" CXX="ccache i686-linux-android-clang++" CFLAGS="-mthumb -Werror -O2" CXXFLAGS="-mthumb -Werror -O2" LIBS="-lstdc++" ./configure --host=i686-linux-android
+CC="ccache i686-linux-android-clang" CXX="ccache i686-linux-android-clang++" CFLAGS="-Werror -O2" CXXFLAGS="-Werror -O2" LIBS="-lstdc++" ./configure --host=i686-linux-android
 #--with-libz=internal --with-threads
 make -j3
 

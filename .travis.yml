@@ -31,7 +31,7 @@ matrix:
         - DETAILS="linux, clang"
     - os: linux
       dist: trusty
-      compiler: clang
+      compiler: gcc
       language: cpp
       sudo: false
       services:
@@ -41,7 +41,7 @@ matrix:
         - DETAILS="android (arm), clang"
     - os: linux
       dist: trusty
-      compiler: clang
+      compiler: gcc
       language: cpp
       sudo: false
       services:
