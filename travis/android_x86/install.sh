@@ -12,7 +12,7 @@ ccache -M 1G
 ccache -s
 
 ./autogen.sh
-CC="ccache i686-linux-android-clang" CXX="ccache i686-linux-android-clang++" CFLAGS="-Werror -O2" CXXFLAGS="-Werror -O2" LIBS="-lstdc++" ./configure --host=i686-linux-android
+CC="ccache i686-linux-android-clang" CXX="ccache i686-linux-android-clang++" LIBS="-lstdc++" ./configure --host=i686-linux-android
 #--with-libz=internal --with-threads
 make -j3
 

@@ -12,7 +12,7 @@ ccache -M 1G
 ccache -s
 
 ./autogen.sh
-CC="ccache arm-linux-androideabi-clang" CXX="ccache arm-linux-androideabi-clang++" CFLAGS="-mthumb -Werror -O2" CXXFLAGS="-mthumb -Werror -O2" LIBS="-lstdc++" ./configure --host=arm-linux-androideabi
+CC="ccache arm-linux-androideabi-clang" CXX="ccache arm-linux-androideabi-clang++" CFLAGS="-mthumb" CXXFLAGS="-mthumb" LIBS="-lstdc++" ./configure --host=arm-linux-androideabi
 make -j3
 
 ccache -s
